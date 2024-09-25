@@ -4,8 +4,8 @@ import "./footer.scss"
 
 export default function Footer() {
   return (
-    <div>
-      FOOTER
+    <div className='footer'>
+      @Copyright CROESO 2K24
     </div>
   )
 }

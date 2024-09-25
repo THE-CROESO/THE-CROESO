@@ -1,0 +1,62 @@
+
+.parallax {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  div {
+    padding-top: 50px;
+    font-size: 100px;
+    color: white;
+    font-weight: 900;
+    @media (max-width: 460px) {
+      font-size: 70px;
+   }
+  }
+
+  .mountains {
+    background-image: url("./partycolor.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+
+    
+   
+  }
+  .planets {
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+
+   
+  }
+  .stars {
+    background-image: url("/stars.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 460px) {
+  .mountains,.planets,.stars{
+    background-size: contain;
+      background-repeat: no-repeat;
+  }
+  h1{
+    font-size: 80px;
+  }
+}

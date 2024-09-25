@@ -3,44 +3,44 @@ import "./explore.scss"
 
 import Events from './Events/Events.jsx'
 import GlimpsesOfPast from './GlimpsesOfPast/GlimpsesOfPast.jsx'
-import Parallax from './Parallax/Parallax.jsx'
 import Trailer from './Trailer/Trailer.jsx'
-import SocialMedia from './SocialMedia/SocialMedia.jsx'
 
+
+import Para from "./para/Parallax.jsx"
 
 
 
 export default function Explore() {
   return (
-    <>
-      <section>
-        <Parallax/>
+    <div className='explore para'>
+      <section className='croeso-parallax'>
+        <Para type="" text="CROESO 2K24"/>
       </section>
 
-      <section>
+      <section className='trailer'>
         <Trailer/>
       </section>
 
-      <section>
-        <Parallax/>
+      <section className='para'>
+        <Para type="events" text="UPCOMING EVENTS" />
       </section>
 
-      <section>
+      <section className='event-section'>
         <Events />
       </section>
 
-      <section>
-        <Parallax/>
+      <section className='para'>
+        <Para type="events" text="GLIMPSES OF CROESO 5.0"/>
       </section>
 
-      <section>
+      <section  className='croeso5'>
         <GlimpsesOfPast/>
       </section>
 
-      <section>
+      {/* <section>
         <SocialMedia/>
-      </section>
+      </section> */}
       
-    </>
+    </div>
   )
 }
